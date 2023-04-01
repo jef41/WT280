@@ -28,7 +28,7 @@ $TempX3G = New-TemporaryFile
 
 # initial conversion
 write-host "converting to X3G"
-&$exe -c D:\Users\Eike\Downloads\gpx-2.6.8-win64\gpx-2.6.8-win64\wt280.ini -qFpN ht $fileRef $TempX3G
+&$exe -c wt280.ini -qFpN ht $fileRef $TempX3G
 
 
 write-host "load file"
