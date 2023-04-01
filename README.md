@@ -63,6 +63,8 @@ The setup being done your workflow might be open Cura, select the WT280 pritner,
 
 ![screenshot of SendTo menu showing 'WTK conversion' option](https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png)
 
+<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png)" width="100" height="100">
+
 the output should be a file that is compatible with the WT280 printer.
 
 # Method
