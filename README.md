@@ -3,7 +3,7 @@ enable Cura slicing for IdeaWerk RS Pro WT280
 
 I aquired an RS PRO IdeaWerk Pro 3D Printer, RS Stock No.:862-5705
 
-The model is WT280A also known as a Weistek 280. It is a capable and solidly built printer with a heated build plate, a modification of the WT150 model for which there seems more information. The WT280 comes with its own slicing software, DoraWare-P. DowaWare-P seems to be a modified version of RepRap. The supplied software is functional, but slow to slice objects and has comparatively few options to control slicing. DoraWare-P outputs .WTK files, which, upon inspection are really S3G/X3G binary files.
+The model is WT280A also known as a Weistek 280. It is a capable and solidly built printer with a heated build plate, a modification of the WT150 model for which there seems more information. The WT280 comes with its own slicing software, DoraWare-P. DowaWare-P seems to be a modified version of ReplicatorG. The supplied software is functional, but slow to slice objects and has comparatively few options to control slicing. DoraWare-P outputs .WTK files, which, upon inspection are really S3G/X3G binary files.
 
 This repository contains files and instructions to use Cura, the [GPX utility](https://github.com/markwal/GPX) and a PowerShell script to be able to output WTK files without using DoraWare-P. The setup is for Windows, I should have written the PowerShell part in Python to make it cross-platform compatible.
 
