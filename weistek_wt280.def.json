@@ -1,0 +1,33 @@
+{
+    "name": "Wesitek WT280",
+    "version": 2,
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "jef",
+        "manufacturer": "Weistek",
+        "machine_x3g_variant": "r1",
+        "file_formats": "text/x-gcode",
+        "platform_offset": [ 0, 0, 0],
+        "machine_extruder_trains":
+        {
+            "0": "weistek_wt280_extruder_0"
+        }
+    },
+
+    "overrides": {
+        "prime_tower_size": { "default_value": 10.0 },
+        "infill_sparse_density": { "default_value": 10 },
+        "layer_height": { "default_value": 0.2 },
+        "machine_extruder_count": { "default_value": 1 },
+        "machine_heated_bed": { "default_value": true },
+        "machine_center_is_zero": { "default_value": true },
+        "machine_height": { "default_value": 145 },
+        "machine_gcode_flavor": { "default_value": "MakerBot" },
+        "machine_depth": { "default_value": 150 },
+        "machine_width": { "default_value": 150 },
+        "machine_name": { "default_value": "RS Pro Ideawerk WT280" },
+		"machine_start_gcode": { "default_value": "M104 S{material_print_temperature_layer_0} T0\nM109 S{material_bed_temperature_layer_0} T0\nG162 Z F450\nG92 X0 Y0 Z0 A0 B0\nG161 Y X F2500\nG92 X0 Y0 Z0 A0 B0\nG1 X5.0 Y5.0 Z-5.0 F450 E0.0\nG162 Z F450\nG161 Y X F2500\nG92 X-75 Y-75 Z{machine_height} A0 B0\nG1 X-75.0 Y-75.0 Z10.0 F500 E0.0\nM6 T0\nM101\nG04 P15000\nM105\n;**** purge nozzle ****,\nG92 A0 ;\nzero extruder,\nG1 E25 F240 ; purge nozzle,\nG92 A0\n;end extra\n;M113 S1.0\n;M108 R72.0\n;G1 X-16.0 Y-13.8 Z0.1 F4800.0\n;G1 F1500.0\n;G1 E1.0\n;G1 F4800.0\nM101\n; end of custom start" },
+		"machine_end_gcode": { "default_value": "; end g-code\nG1 X0.0 Y75.0 F3300.0\nM104 S0\nM109 S0\nG162 Z F450" }
+    }
+}
