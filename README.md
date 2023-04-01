@@ -33,8 +33,7 @@ In Cura go to **Help > Show Configuration Folder**, this should open File Explor
 
 Add non-networked printer and scroll to the bottom of the list, you should see the manufacturer Weistek and the model WeistekWT280 listed, add that printer
 
-![screenshot of Cura Add Printer option](https://user-images.githubusercontent.com/6393750/229301586-04db477a-f429-4854-967f-8e5d5185cf25.png | width=200)
-
+<img alt="screenshot of Cura Add Printer option" src="https://user-images.githubusercontent.com/6393750/229301586-04db477a-f429-4854-967f-8e5d5185cf25.png" width="600">
 
 **Settings > Printers > Manage Printers > WeistekWT280 > Machine Settings**
 
@@ -42,7 +41,7 @@ Add non-networked printer and scroll to the bottom of the list, you should see t
 
 In my case the measured value was 142.9mm, but to get better bed adhesion I used 143.0mm. Set this value too small and the printer bed will be jamming into the nozzle - top tip if this happens and you pull power then the (relatively heavy) metal bed construction will drop immediately and with a loud bang, 'Warning Hands Pinching' indeed!
 
-![label on printer reading "Warning Hands Pinching "](https://user-images.githubusercontent.com/6393750/229301043-e561677d-fbb0-4efa-8804-5de71da037dc.jpg|width=100px)
+<img alt="label on printer reading 'Warning Hands Pinching'" src="https://user-images.githubusercontent.com/6393750/229301043-e561677d-fbb0-4efa-8804-5de71da037dc.jpg" width="400">
 
 optionally import the custom print profile. I have been using 0.2mm layers and a raft with decent results;
 
@@ -61,9 +60,7 @@ You could also add this to the Send To context menu by typing **shell:sendto** i
 # Convert to WTK
 The setup being done your workflow might be open Cura, select the WT280 pritner, slice your .STL file and save as .gcode. Go to that newly created .gcode file and send to WTK conversion
 
-![screenshot of SendTo menu showing 'WTK conversion' option](https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png)
-
-<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png)" width="100" height="100">
+<img alt="screenshot of SendTo menu showing 'WTK conversion' option" src="https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png" width="400">
 
 the output should be a file that is compatible with the WT280 printer.
 
