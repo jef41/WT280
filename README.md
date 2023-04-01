@@ -32,35 +32,36 @@ In Cura go to **Help > Show Configuration Folder**, this should open File Explor
 6. in Cura go to **Settings > Printers > Add Printer...**
 
 Add non-networked printer and scroll to the bottom of the list, you should see the manufacturer Weistek and the model WeistekWT280 listed, add that printer
-[image]
+
+![screenshot of Cura Add Printer option](https://user-images.githubusercontent.com/6393750/229301586-04db477a-f429-4854-967f-8e5d5185cf25.png | width=200)
+
+
 **Settings > Printers > Manage Printers > WeistekWT280 > Machine Settings**
 
 7. Set the Z height to the maximum measured distance from the nozzle to build plate (use the printers on-board LCD control panel to measure this). 
 
 In my case the measured value was 142.9mm, but to get better bed adhesion I used 143.0mm. Set this value too small and the printer bed will be jamming into the nozzle - top tip if this happens and you pull power then the (relatively heavy) metal bed construction will drop immediately and with a loud bang, 'Warning Hands Pinching' indeed!
 
-[image]
+![label on printer reading "Warning Hands Pinching "](https://user-images.githubusercontent.com/6393750/229301043-e561677d-fbb0-4efa-8804-5de71da037dc.jpg|width=100px)
 
 optionally import the custom print profile. I have been using 0.2mm layers and a raft with decent results;
 
 8. in Cura Ctrl+J > Import > and select the file **WT280_standard.curaprofile**
 
 ## Prep the PowerShell script
-You will need to manually run the PowerShell script, the script will then prompt you to navigate to the .gcode file for conversion. To simplify this I created a shortcut to the PowerShell script and placed the chortcut where I save my 3d models on my computer. In that folder;
+You will need to manually run the PowerShell script, the script will then prompt you to navigate to the .gcode file for conversion. To simplify this I created a shortcut to the PowerShell script and placed the shortcut where I save my 3d models on my computer. In that folder;
 
 9. right click and select New > Shortcut
 in that dialogue 
 
 `powershell.exe -noexit -ExecutionPolicy Bypass -File "C:\Program Files\gpx-2.6.8-win64\WTK-conversion.ps1"`
 
-[image]
-
-You could also add this to the Send To context menu by typing shell:sendto in the Explorer address bar then place a copy of the shortcut in that folder
+You could also add this to the Send To context menu by typing **shell:sendto** in the Explorer address bar then place a copy of the shortcut in that folder
 
 # Convert to WTK
 The setup being done your workflow might be open Cura, select the WT280 pritner, slice your .STL file and save as .gcode. Go to that newly created .gcode file and send to WTK conversion
 
-[image]
+![screenshot of SendTo menu showing 'WTK conversion' option](https://user-images.githubusercontent.com/6393750/229301508-9c578800-9d2e-48ca-877d-e0a7d29f5937.png)
 
 the output should be a file that is compatible with the WT280 printer.
 
