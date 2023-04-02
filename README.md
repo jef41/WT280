@@ -47,7 +47,7 @@ In my case the measured value was 142.9mm, but to get better bed adhesion I used
 
 optionally import the custom print profile. I have been using 0.2mm layers and a raft with decent results;
 
-8. in Cura Ctrl+J > Import > and select the file **WT280_standard.curaprofile**
+8. in Cura Ctrl+J > Import > and select the file **WT280.curaprofile**
 
 ## Prep the PowerShell script
 You will need to execute the PowerShell script which will then prompt you to navigate to the .gcode file for conversion. To simplify this I created a shortcut to the PowerShell script and placed this shortcut in the same folder where I save my 3d models on my computer. In that folder;
