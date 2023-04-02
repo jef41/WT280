@@ -21,15 +21,14 @@ if ($args[0]) {
 # test for valid file or exit
 if ($fileRef) { write-host "got gcode file" } else { exit }
 
-$exe = "C:\Program Files\gpx-2.6.8-win64\gpx.exe"
+Set-Location -Path "C:\Program Files\gpx-2.6.8-win64\"
 # cannot pipe binary data
 # so get a temporary file to hold the initial X3G file;
 $TempX3G = New-TemporaryFile
 
 # initial conversion
 write-host "converting to X3G"
-&$exe -c wt280.ini -qFpN ht $fileRef $TempX3G
-
+&.\gpx.exe -c wt280.ini -qFpN ht $fileRef $TempX3G
 
 write-host "load file"
 #load to a mutable array, using get-content is waaaay slower
