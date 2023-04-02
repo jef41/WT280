@@ -14,9 +14,9 @@ tested with GPX 2.6.8
 
 1. download GPX utility from https://github.com/markwal/GPX/releases/latest
 
-I unzipped the 64bit version and put the folder at C:\Program Files\gpx-2.6.8-win64
+Unzip the 64bit version and put the folder at C:\Program Files\gpx-2.6.8-win64
 
-2. put the file **wt280.ini** into this folder at C:\Program Files\gpx-2.6.8-win64
+2. put the file **wt280.ini** into this folder at C:\Program Files\gpx-2.6.8-win64\machine_inis
 3. put the file **WTK-conversion.ps1** into this folder at C:\Program Files\gpx-2.6.8-win64
 
 The .ini file contains some specific parameters for the printer when converting to X3G commands.
